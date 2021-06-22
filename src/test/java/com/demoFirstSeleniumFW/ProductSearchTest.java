@@ -2,8 +2,8 @@ package com.demoFirstSeleniumFW;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,7 @@ public class ProductSearchTest {
 	  
 	WebDriver driver;
 	
-	@BeforeClass
+	@Before
 	
 	public  void beforeClass() {
 		driver = new ChromeDriver();
@@ -37,7 +37,7 @@ public class ProductSearchTest {
 		
 	}
 	
-	@AfterClass
+	@After
 	
 	public void afterClass() {
 		driver.quit();
